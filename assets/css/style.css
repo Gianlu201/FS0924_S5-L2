@@ -36,7 +36,7 @@ hr {
   }
 
   .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -264,7 +264,7 @@ iframe {
 }
 
 @media screen and (min-width: 992px) {
-  article #ContainerLogoHtml #logoHtml {
+  article #logoHtml {
     width: 90px;
     height: 95px;
   }
@@ -284,7 +284,11 @@ iframe {
 }
 
 @media screen and (min-width: 1200px) {
-  article #ContainerLogoHtml #logoHtml {
+  h1 #titleWords span {
+    bottom: -18px;
+  }
+
+  article #logoHtml {
     width: 65px;
     height: 70px;
   }
@@ -371,18 +375,25 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  iframe,
+  #iframeContainer,
   section {
     display: inline-block;
-    width: 48%;
+    width: 49.9%;
     border-radius: 20px;
     vertical-align: top;
     margin: 0 auto 2em;
     height: 220px;
+    margin-inline-end: -5px;
+    margin-top: 40px;
+  }
+
+  iframe {
+    height: 100%;
   }
 
   section {
     font-size: 1em;
+    margin-right: 0;
   }
 }
 
@@ -432,6 +443,9 @@ aside div p:last-child {
   border: 2px solid white;
   border-radius: 8px;
   font-size: 1.2em;
+}
+
+#lateralButtons div a {
   color: blue;
 }
 
