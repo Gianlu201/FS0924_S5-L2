@@ -274,6 +274,10 @@ iframe {
     line-height: 1.2em;
   }
 
+  h1 #titleWords span {
+    bottom: -25px;
+  }
+
   iframe {
     height: 200px;
   }
@@ -418,7 +422,7 @@ aside div p:last-child {
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 10000;
 }
 
 #lateralButtons div {
@@ -471,17 +475,34 @@ aside div p:last-child {
     font-size: 1.8em;
   }
 
-  aside div {
-    display: inline-block;
-    width: 32%;
-  }
-
   aside div p:last-of-type {
     font-size: 0.7em;
+  }
+
+  #lateralButtons div {
+    width: 50px;
+    height: 50px;
+  }
+
+  #social {
+    top: 4vh;
+  }
+
+  #calendar {
+    top: 13vh;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  aside div {
+    display: inline-block;
+    width: 33.333%;
+    margin-inline-end: -7px;
+  }
+
+  aside div:last-of-type {
+    margin-right: 0;
+  }
 }
 
 /* FOOTER */
